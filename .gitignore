@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 LinearSystemSolver/.idea/
+
+LinearSystemSolver/WebLinearSystemSolver/static/node_modules/
