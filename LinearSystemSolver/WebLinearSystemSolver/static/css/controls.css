@@ -1,0 +1,57 @@
+.button-panel .command-button {
+    alignment: center;
+    /*margin-top: 25px;*/
+    /*margin-bottom: 25px;*/
+    background-color: #00CED1;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 84px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.button-panel .disabled-button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #206A6B;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 84px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+.button-panel .command-button:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    /*left: 20%;*/
+    /*top: 100%;*/
+    z-index: 1;
+    background: rgba(0, 128, 128, 1);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #191970;
+}
+
+.button-panel button {
+    alignment: center;
+    cursor: pointer;
+    position: center;
+    top: 50%;
+    /*margin: 0 auto;*/
+
+}

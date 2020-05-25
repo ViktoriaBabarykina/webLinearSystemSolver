@@ -3,9 +3,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>System solver</title>
+    <script type="module" src="{% static 'js/webLinearSystemSolverAlgorithms.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/controls.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pageLayouts.css' %}">
 </head>
 <body>
+<div class="button-panel">
+    <table>
+        <tr>
+            <td>
+                <button class="command-button" data-title="Generates symmetric positive definite matrix" type="button"
+                        id="generatorButton">Generate matrix
+                </button>
+            </td>
+            <td>
+                <button class="command-button" data-title="Views matrix from config" type="button"
+                        id="generatorButton">View matrix
+                </button>
+            </td>
+            <td>
+                <button class="command-button" data-title="ya prosto knopka" type="button"
+                        id="generatorButton">Prosto knopka
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
 
+<div class="preview-math-input">
+    <p class="linear-system-preview">Linear system</p>
+    $$
+    \left\{
+    \begin{array}{ll}
+    a_1x_1+b_1y+c_1z &=d_1+e_1 \\
+    a_2x+b_2y &=d_2 \\
+    a_3x+b_3y+c_3z &=d_3\\
+    \end{array}
+    \right.
+    $$
+</div>
 </body>
+<script id="MathJax-script" async
+        src="static/node_modules/mathjax/es5/tex-mml-chtml.js">
+</script>
 </html>

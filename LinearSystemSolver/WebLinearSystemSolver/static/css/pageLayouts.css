@@ -1,0 +1,11 @@
+body{
+    background: #EFFBF8;
+}
+
+.button-panel table{
+    width: 100%;
+}
+.button-panel td{
+    alignment: center;
+    width: 33%;
+}
