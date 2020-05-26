@@ -14,10 +14,10 @@
     <div class="button-panel">
         <a>
             <button class="command-button" data-title="Generates symmetric positive definite matrix" type="button"
-                    id="generatorButton">Random
+                    id="generatorButton">View
             </button>
         </a>
-         <a>
+        <a>
             <button class="command-button" data-title="Solves matrix" type="button"
                     id="solveButton">Solve
             </button>
@@ -25,21 +25,28 @@
 
     </div>
 </div>
+<h3 id="system">Linear system</h3>
+    <table>
+        <tr>
+            <th>
+                <div class=img-div>
+                    <img id='img' border="0"/>
+                </div>
+            </th>
+        </tr>
+    </table>
 
+    <h3 id="solution">Solution</h3>
+        <table>
+            <tr>
+                <th>
+                    <div class=img-div>
+                        <img id='img-solution' border="0"/>
+                    </div>
+                </th>
+            </tr>
+        </table>
 
-<div class="preview-math-input">
-{#    <h2>Linear system</h2>#}
-    <p class="linear-system-preview"></p>
-    <math id="equation">
-
-    </math>
-    $$
-    \left\{\begin{array}{ll}
-    a_1x_1+b_1y+c_1z+ \\
-    a_2x+b_2y + \\
-    a_3x+b_3y+c_3z\\
-    \end{array}\right.$$
-</div>
 </body>
 <script id="MathJax-script" async
         src="static/node_modules/mathjax/es5/tex-mml-chtml.js">

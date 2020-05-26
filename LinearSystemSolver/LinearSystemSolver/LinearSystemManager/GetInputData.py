@@ -30,3 +30,15 @@ class GetInputData(object):
 
         result = [matrix, vector_b]
         return result
+
+    def get_solution_from_file(self):
+        config = ConfigManager()
+        path_to_solution = config.path_to_linear_system_solution()
+        solution = []
+        with open(path_to_solution) as file:
+            for line in file:
+                if line is not '\n':
+                    solution.append(list(line.rstrip('\n')))
+            # solution = file.readline().rstrip('\n')
+
+        return solution

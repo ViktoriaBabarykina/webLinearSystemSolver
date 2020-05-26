@@ -10,6 +10,11 @@ def index(request):
 
 def view_system(request):
     data = GetInputData()
-    result = []
     linear_system = data.get_matrix_from_file()
     return HttpResponse(json.dumps(linear_system), content_type="application/json")
+
+
+def solve_system(request):
+    data = GetInputData()
+    solution = data.get_solution_from_file()
+    return HttpResponse(json.dumps(solution), content_type="application/json")

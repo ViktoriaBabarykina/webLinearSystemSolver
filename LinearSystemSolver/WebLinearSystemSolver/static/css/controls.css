@@ -2,7 +2,7 @@
     alignment: center;
     /*margin-top: 25px;*/
     /*margin-bottom: 25px;*/
-    background-color: #00CED1;
+    background-color: #029da0;
     border: none;
     color: white;
     width: 120px;
@@ -18,21 +18,6 @@
     margin-right: auto
 }
 
-.button-panel .disabled-button {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background-color: #206A6B;
-    border: none;
-    color: white;
-    width: 100px;
-    height: 50px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: not-allowed;
-}
 
 .button-panel .command-button:hover::after {
     content: attr(data-title);
@@ -52,6 +37,21 @@
     cursor: pointer;
     position: center;
     top: 50%;
-    /*margin: 0 auto;*/
-
 }
+
+.img-div {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+table {
+    width: 100%;
+}
+
