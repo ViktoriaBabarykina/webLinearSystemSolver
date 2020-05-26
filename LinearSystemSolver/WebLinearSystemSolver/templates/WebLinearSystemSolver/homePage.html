@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,39 +10,35 @@
     <link rel="stylesheet" href="{% static 'css/pageLayouts.css' %}">
 </head>
 <body>
-<div class="button-panel">
-    <table>
-        <tr>
-            <td>
-                <button class="command-button" data-title="Generates symmetric positive definite matrix" type="button"
-                        id="generatorButton">Generate matrix
-                </button>
-            </td>
-            <td>
-                <button class="command-button" data-title="Views matrix from config" type="button"
-                        id="generatorButton">View matrix
-                </button>
-            </td>
-            <td>
-                <button class="command-button" data-title="ya prosto knopka" type="button"
-                        id="generatorButton">Prosto knopka
-                </button>
-            </td>
-        </tr>
-    </table>
+<div class="topnav">
+    <div class="button-panel">
+        <a>
+            <button class="command-button" data-title="Generates symmetric positive definite matrix" type="button"
+                    id="generatorButton">Random
+            </button>
+        </a>
+         <a>
+            <button class="command-button" data-title="Solves matrix" type="button"
+                    id="solveButton">Solve
+            </button>
+        </a>
+
+    </div>
 </div>
 
+
 <div class="preview-math-input">
-    <p class="linear-system-preview">Linear system</p>
+{#    <h2>Linear system</h2>#}
+    <p class="linear-system-preview"></p>
+    <math id="equation">
+
+    </math>
     $$
-    \left\{
-    \begin{array}{ll}
-    a_1x_1+b_1y+c_1z &=d_1+e_1 \\
-    a_2x+b_2y &=d_2 \\
-    a_3x+b_3y+c_3z &=d_3\\
-    \end{array}
-    \right.
-    $$
+    \left\{\begin{array}{ll}
+    a_1x_1+b_1y+c_1z+ \\
+    a_2x+b_2y + \\
+    a_3x+b_3y+c_3z\\
+    \end{array}\right.$$
 </div>
 </body>
 <script id="MathJax-script" async
